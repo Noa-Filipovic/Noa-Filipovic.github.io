@@ -30,7 +30,12 @@ body {
     margin: 0;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
         sans-serif;
-    background: var(--bg-main);
+    background: radial-gradient(
+        circle at top,
+        #0e1628 0%,
+        #0b1220 45%,
+        #070b14 100%
+    );
     color: var(--text-main);
     line-height: 1.6;
 }
@@ -102,7 +107,7 @@ section {
     border-left: 4px solid var(--accent);
     border-right: 4px solid var(--accent);
     max-width: 900px;
-    margin: clamp(1rem, 4vw, 2.5rem) auto;
+    margin: clamp(1.5rem, 5vw, 3.5rem) auto;
     padding: clamp(1.25rem, 3vw, 2rem);
 }
 
@@ -232,6 +237,16 @@ footer {
 #skills {
     padding-top: clamp(2rem, 4vw, 3rem);
     padding-bottom: clamp(2.5rem, 5vw, 3.5rem);
+    box-shadow: 0 0 0 1px rgba(74, 222, 128, 0.12);
+}
+
+#certifications {
+    border-left-color: rgba(74, 222, 128, 0.6);
+    border-right-color: rgba(74, 222, 128, 0.6);
+}
+
+#education {
+    opacity: 0.95;
 }
 
 /* =========================
@@ -284,6 +299,14 @@ footer {
     color: var(--text-main);
 }
 
+.skills-indicator {
+    text-align: center;
+    font-size: 0.85rem;
+    color: var(--text-muted);
+    margin-bottom: 0.75rem;
+    letter-spacing: 0.04em;
+}
+
 
 /* =========================
    CERTIFICATIONS SECTION
@@ -299,6 +322,11 @@ footer {
     margin-top: 0.4rem;
 }
 
+.cert-roadmap {
+    margin-top: 1rem;
+    font-size: 0.85rem;
+    color: var(--text-muted);
+}
 /* =========================
    PROFILE PICTURE
    ========================= */
