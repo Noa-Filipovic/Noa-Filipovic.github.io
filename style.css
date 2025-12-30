@@ -1,152 +1,154 @@
 :root {
-  /* Base backgrounds */
-  --bg-main: #0b1220;           /* deep navy-black */
-  --bg-card: #111827;           /* dark slate */
+    /* Base backgrounds */
+    --bg-main: #0b1220;
+    /* deep navy-black */
+    --bg-card: #111827;
+    /* dark slate */
 
-  /* Text */
-  --text-main: #e5e7eb;
-  --text-muted: #9ca3af;
+    /* Text */
+    --text-main: #e5e7eb;
+    --text-muted: #9ca3af;
 
-  /* Primary Accent (phthalo green) */
-  --accent: #123524;
-  --accent-hover: #1b5a3f;
-  --accent-soft: #4ade80;
+    /* Primary Accent (phthalo green) */
+    --accent: #123524;
+    --accent-hover: #1b5a3f;
+    --accent-soft: #4ade80;
 }
 
 /* =========================
    RESET & GLOBAL
    ========================= */
 * {
-  box-sizing: border-box;
+    box-sizing: border-box;
 }
 
 html {
-  scroll-behavior: smooth;
+    scroll-behavior: smooth;
 }
 
 body {
-  margin: 0;
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
-    sans-serif;
-  background: var(--bg-main);
-  color: var(--text-main);
-  line-height: 1.6;
+    margin: 0;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+        sans-serif;
+    background: var(--bg-main);
+    color: var(--text-main);
+    line-height: 1.6;
 }
 
 p {
-  margin-top: 0.5rem;
-  margin-bottom: 0.75rem;
+    margin-top: 0.5rem;
+    margin-bottom: 0.75rem;
 }
 
 strong {
-  color: var(--text-main);
+    color: var(--text-main);
 }
 
 /* =========================
    HERO
    ========================= */
 .hero {
-  padding: clamp(3rem, 8vw, 5rem) 1.5rem;
-  text-align: center;
+    padding: clamp(3rem, 8vw, 5rem) 1.5rem;
+    text-align: center;
 }
 
 .hero h1 {
-  font-size: clamp(2rem, 5vw, 3rem);
-  margin: 0 0 0.5rem;
+    font-size: clamp(2rem, 5vw, 3rem);
+    margin: 0 0 0.5rem;
 }
 
 .hero p {
-  color: var(--text-muted);
-  margin-bottom: 1.75rem;
-  font-size: clamp(1rem, 2.5vw, 1.1rem);
+    color: var(--text-muted);
+    margin-bottom: 1.75rem;
+    font-size: clamp(1rem, 2.5vw, 1.1rem);
 }
 
 /* Links / buttons in hero */
 .links {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  gap: 0.5rem;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 0.5rem;
 }
 
 .links a {
-  display: inline-block;
-  padding: 0.5rem 1.1rem;
-  border: 1px solid var(--accent);
-  border-radius: 999px;
-  color: var(--accent-soft);
-  text-decoration: none;
-  font-size: 0.95rem;
-  transition: background 0.2s ease, color 0.2s ease, transform 0.15s ease;
+    display: inline-block;
+    padding: 0.5rem 1.1rem;
+    border: 1px solid var(--accent);
+    border-radius: 999px;
+    color: var(--accent-soft);
+    text-decoration: none;
+    font-size: 0.95rem;
+    transition: background 0.2s ease, color 0.2s ease, transform 0.15s ease;
 }
 
 .links a:hover {
-  background: var(--accent);
-  color: var(--text-main);
-  transform: translateY(-1px);
+    background: var(--accent);
+    color: var(--text-main);
+    transform: translateY(-1px);
 }
 
 .links a:focus-visible {
-  outline: 2px solid var(--accent-soft);
-  outline-offset: 2px;
+    outline: 2px solid var(--accent-soft);
+    outline-offset: 2px;
 }
 
 /* =========================
    SECTIONS
    ========================= */
 section {
-  background: var(--bg-card);
-  border-radius: 12px;
-  border-left: 4px solid var(--accent);
-  max-width: 900px;
-  margin: clamp(1rem, 4vw, 2.5rem) auto;
-  padding: clamp(1.25rem, 3vw, 2rem);
+    background: var(--bg-card);
+    border-radius: 12px;
+    border-left: 4px solid var(--accent);
+    max-width: 900px;
+    margin: clamp(1rem, 4vw, 2.5rem) auto;
+    padding: clamp(1.25rem, 3vw, 2rem);
 }
 
 section h2 {
-  margin-top: 0;
-  margin-bottom: 1rem;
-  color: var(--accent-soft);
-  border-bottom: 1px solid var(--accent);
-  padding-bottom: 0.4rem;
-  font-size: 1.25rem;
+    margin-top: 0;
+    margin-bottom: 1rem;
+    color: var(--accent-soft);
+    border-bottom: 1px solid var(--accent);
+    padding-bottom: 0.4rem;
+    font-size: 1.25rem;
 }
 
 /* =========================
    LISTS
    ========================= */
 ul {
-  padding-left: 1.2rem;
-  margin: 0.75rem 0 0;
+    padding-left: 1.2rem;
+    margin: 0.75rem 0 0;
 }
 
 li {
-  margin-bottom: 0.5rem;
-  color: var(--text-main);
+    margin-bottom: 0.5rem;
+    color: var(--text-main);
 }
 
 /* =========================
    FOOTER
    ========================= */
 footer {
-  text-align: center;
-  padding: 2.5rem 1rem 3rem;
-  color: var(--text-muted);
-  font-size: 0.9rem;
+    text-align: center;
+    padding: 2.5rem 1rem 3rem;
+    color: var(--text-muted);
+    font-size: 0.9rem;
 }
 
 /* =========================
    RESPONSIVE TWEAKS
    ========================= */
 @media (max-width: 600px) {
-  section {
-    margin: 1rem;
-    padding: 1.25rem;
-  }
+    section {
+        margin: 1rem;
+        padding: 1.25rem;
+    }
 
-  .hero {
-    padding: 3rem 1.25rem;
-  }
+    .hero {
+        padding: 3rem 1.25rem;
+    }
 }
 
 /* =========================
@@ -154,77 +156,158 @@ footer {
    ========================= */
 
 .skills-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-  gap: 1.5rem;
-  margin-top: 1rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 1.5rem;
+    margin-top: 1rem;
 }
 
 .skill-group h3 {
-  margin: 0 0 0.75rem;
-  font-size: 1rem;
-  color: var(--text-main);
+    margin: 0 0 0.75rem;
+    font-size: 1rem;
+    color: var(--text-main);
 }
 
 .skill-list {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-  display: flex;
-  flex-wrap: wrap;
-  gap: 0.5rem;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
 }
 
 .skill-list li {
-  padding: 0.35rem 0.75rem;
-  border: 1px solid var(--accent);
-  border-radius: 999px;
-  font-size: 0.85rem;
-  color: var(--accent-soft);
-  background: transparent;
+    padding: 0.35rem 0.75rem;
+    border: 1px solid var(--accent);
+    border-radius: 999px;
+    font-size: 0.85rem;
+    color: var(--accent-soft);
+    background: transparent;
 }
 
 .skill-block {
-  margin-top: 1.5rem;
+    margin-top: 1.5rem;
 }
 
 .skill-block h3 {
-  margin-bottom: 0.75rem;
-  color: var(--text-main);
+    color: var(--text-main);
+
+    .skill-block h3 {
+        font-size: 1.1rem;
+        margin-bottom: 1rem;
+        letter-spacing: 0.02em;
+    }
 }
 
 .skill-items {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 0.75rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0.9rem;
+
 }
 
 .skill-item {
-  display: flex;
-  align-items: center;
-  gap: 0.5rem;
-  padding: 0.4rem 0.7rem;
-  border: 1px solid var(--accent);
-  border-radius: 999px;
-  font-size: 0.85rem;
-  color: var(--accent-soft);
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+
+    padding: 0.7rem 1.2rem;
+    font-size: 1rem;
+
+    border: 1px solid var(--accent);
+    border-radius: 999px;
+    background: rgba(18, 53, 36, 0.18);
+
+    color: var(--accent-soft);
 }
+
 
 .skill-item img {
-  width: 18px;
-  height: 18px;
-  filter: grayscale(100%) brightness(1.3);
+    width: 24px;
+    height: 24px;
 }
 
+
+.skill-item:hover {
+    background: var(--accent);
+    color: var(--text-main);
+    transform: translateY(-1px);
+    transition: background 0.2s ease, transform 0.15s ease;
+}
+
+
+.skill-item:hover img {
+    filter: brightness(1.1);
+}
+
+#skills {
+    padding-top: clamp(2rem, 4vw, 3rem);
+    padding-bottom: clamp(2.5rem, 5vw, 3.5rem);
+}
+
+/* =========================
+   SKILLS CAROUSEL
+   ========================= */
+
+.skills-carousel {
+    position: relative;
+    overflow: hidden;
+}
+
+.skills-track {
+    display: flex;
+    transition: transform 0.4s ease;
+}
+
+.skills-slide {
+    min-width: 100%;
+    padding-top: 1rem;
+}
+
+.skills-slide h3 {
+    text-align: center;
+    font-size: clamp(1.3rem, 3vw, 1.6rem);
+    margin-bottom: 1.5rem;
+    letter-spacing: 0.04em;
+    color: var(--accent-soft);
+}
+
+.skills-controls {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 1.25rem;
+}
+
+.skills-controls button {
+    background: transparent;
+    border: 1px solid var(--accent);
+    color: var(--accent-soft);
+    font-size: 1.25rem;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: background 0.2s ease;
+}
+
+.skills-controls button:hover {
+    background: var(--accent);
+    color: var(--text-main);
+}
+
+
+/* =========================
+   CERTIFICATIONS SECTION
+   ========================= */
+
 .cert h3 a {
-  color: var(--accent-soft);
-  text-decoration: none;
+    color: var(--accent-soft);
+    text-decoration: none;
 }
 
 .cert p {
-  color: var(--text-muted);
-  margin-top: 0.4rem;
+    color: var(--text-muted);
+    margin-top: 0.4rem;
 }
-
-
-
