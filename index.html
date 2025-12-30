@@ -19,7 +19,6 @@
 
         <div class="links">
             <a href="https://github.com/Noa-Filipovic" target="_blank">GitHub</a>
-            <a href="mailto:noa.filipovic2002@gmail.com">Email</a>
             <a href="assets/downloads/Noa Filipović - CV.pdf" target="_blank">Download CV</a>
         </div>
     </header>
@@ -184,13 +183,33 @@
         </ul>
     </section>
 
-
     <footer id="contact">
-        <p>
-            Email: <a href="mailto:noa.filipovic2002@gmail.com">
-                noa.filipovic2002@gmail.com
-            </a>
-        </p>
+        <section id="contact">
+            <h2>Contact</h2>
+
+            <form action="https://formspree.io/f/mojqoall" method="POST" class="contact-form">
+                <label>
+                    Name
+                    <input type="text" name="name" required>
+                </label>
+
+                <label>
+                    Email
+                    <input type="email" name="_replyto" required>
+                </label>
+
+                <label>
+                    Message
+                    <textarea name="message" rows="5" required></textarea>
+                </label>
+
+                <button type="submit">Send Message</button>
+
+                <input type="hidden" name="_subject" value="New message from portfolio">
+                <input type="hidden" name="_template" value="table">
+
+            </form>
+        </section>
 
     </footer>
 
@@ -242,7 +261,6 @@
             .addEventListener('mouseleave', startAutoPlay);
 
         startAutoPlay();
-
 
     </script>
 
