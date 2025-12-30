@@ -1,9 +1,45 @@
-body {
-  font-family: system-ui, sans-serif;
-  background: #f4f4f4;
-  padding: 2rem;
+* {
+    box-sizing: border-box;
 }
 
-h1 {
-  color: #2c3e50;
+body {
+    font-family: system-ui, -apple-system, sans-serif;
+    margin: 0;
+    background: #f9f9f9;
+    color: #222;
+    line-height: 1.6;
+}
+
+header.hero {
+    background: #1f2933;
+    color: white;
+    padding: 3rem 1.5rem;
+    text-align: center;
+}
+
+header.hero .links {
+    color: #9ae6b4;
+    margin: 0 0.5rem;
+    text-decoration: none;
+}
+
+section {
+    max-width: 800px;
+    margin: 2.5rem auto;
+    padding: 0 1.5rem;
+}
+
+h2 {
+    border-bottom: 2px solid #e2e8f0;
+    padding-bottom: 0.5rem;
+}
+
+ul {
+    padding-left: 1.2rem;
+}
+
+footer {
+    background: #e2e8f0;
+    padding: 2rem 1.5rem;
+    text-align: center;
 }
