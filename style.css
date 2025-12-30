@@ -311,3 +311,20 @@ footer {
     color: var(--text-muted);
     margin-top: 0.4rem;
 }
+
+/* =========================
+   PROFILE PICTURE
+   ========================= */
+
+.profile-pic {
+    width: 200px;
+    height: 200px;
+
+    border-radius: 50%;
+    object-fit: cover;
+
+    border: 2px solid var(--accent);
+    box-shadow: 0 0 0 4px rgba(18, 53, 36, 0.25);
+
+    margin-bottom: 1.25rem;
+}
