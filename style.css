@@ -153,3 +153,39 @@ footer {
     padding: 3rem 1.25rem;
   }
 }
+
+/* =========================
+   SKILLS SECTION
+   ========================= */
+
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1.5rem;
+  margin-top: 1rem;
+}
+
+.skill-group h3 {
+  margin: 0 0 0.75rem;
+  font-size: 1rem;
+  color: var(--text-main);
+}
+
+.skill-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.skill-list li {
+  padding: 0.35rem 0.75rem;
+  border: 1px solid var(--accent);
+  border-radius: 999px;
+  font-size: 0.85rem;
+  color: var(--accent-soft);
+  background: transparent;
+}
+
