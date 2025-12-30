@@ -2,7 +2,6 @@
   /* Base backgrounds */
   --bg-main: #0b1220;           /* deep navy-black */
   --bg-card: #111827;           /* dark slate */
-  --border-subtle: #1f2937;
 
   /* Text */
   --text-main: #e5e7eb;
@@ -32,10 +31,6 @@ body {
   background: var(--bg-main);
   color: var(--text-main);
   line-height: 1.6;
-}
-
-a {
-  color: inherit;
 }
 
 p {
